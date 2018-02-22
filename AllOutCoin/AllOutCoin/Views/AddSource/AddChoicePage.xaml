@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AllOutCoin.Views.AddChoicePage"
+		     Title="Add Data Source">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20" Padding="15">
+                <Label Text="Add a new data source, that will automatically update your balances/trades and store the data locally. " FontSize="Medium"/>
+
+                <StackLayout Spacing="0" Padding="0">
+                    <Button x:Name="addApi" Text="Add Coin Exchange" StyleClass="Success"  ></Button>
+                    <Label HorizontalTextAlignment="Center"  Text="Select any Cryptocurrency Exchange to Sync your Balance and Trades." FontSize="Medium" />
+                </StackLayout>
+
+                <StackLayout Spacing="0" Padding="0">
+                    <Button Text="Add a Wallet Address" StyleClass=""  ></Button>
+                    <Label HorizontalTextAlignment="Center"  Text="Sync your different wallet balances to one place." FontSize="Medium"/>
+                </StackLayout>
+
+                <StackLayout Spacing="0" Padding="0">
+                    <Button Text="Add a Coin Manually"  StyleClass="Small" ></Button>
+                    <Label HorizontalTextAlignment="Center"  Text="Add a coin to your balance by hand. (To pretend you have it, or otherwise)" FontSize="Medium"  />
+                </StackLayout>
+
+                <Label Text="Read our Privacy Policy at AllOutCoin.com. This service is run entirely on your device, such that we have no knowledge of your exchange usage, or balances without your explicit consent." FontSize="Medium"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+        
+</ContentPage>

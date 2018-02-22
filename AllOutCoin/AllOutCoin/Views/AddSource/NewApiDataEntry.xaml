@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AllOutCoin.Views.NewApiDataEntry"
+		     Title="Setup Exchange">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20" Padding="15">
+
+                <Image Source="{Binding exchange.Image}" HeightRequest="60" WidthRequest="150" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Button x:Name="help" Text="How to Setup? For Instructions - Click Here" BackgroundColor="Transparent" TextColor="#3498db" Style="" FontAttributes="None" StyleClass="Small"></Button>
+                <Label Text="API Key:" FontSize="Medium" IsVisible="{Binding exchange.usesApiKey}"/>
+                <Entry x:Name="apikey" Text="{Binding apilogin.API_KEY}" FontSize="Small" IsVisible="{Binding exchange.usesApiKey}"/>
+                <Label Text="API Key Secret:" FontSize="Medium" IsVisible="{Binding exchange.usesApiKeySecret}"/>
+                <Entry x:Name="apikeysecret" Text="{Binding apilogin.API_KEY_SECRET}" FontSize="Small" Margin="0" IsVisible="{Binding exchange.usesApiKeySecret}"/>
+                <Label Text="API Key Password:" FontSize="Medium" IsVisible="{Binding exchange.usesApiKeyPassword}"/>
+                <Entry x:Name="apikeypassword" Text="{Binding apilogin.API_KEY_PASSWORD}" FontSize="Small" Margin="0" IsVisible="{Binding exchange.usesApiKeyPassword}"/>
+
+            <Editor x:Name="error" TextColor="Red" Text="" IsVisible="False"></Editor>
+            <Button x:Name="test" Text="Verify And Save" StyleClass="Info" Clicked="Test_Clicked"  ></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

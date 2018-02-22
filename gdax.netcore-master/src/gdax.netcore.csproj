@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3">
+    </PackageReference>
+    <PackageReference Include="System.Collections" Version="4.3.0">
+    </PackageReference>
+    <PackageReference Include="System.Linq" Version="4.3.0">
+    </PackageReference>
+    <PackageReference Include="System.Net.Http" Version="4.3.3">
+    </PackageReference>
+    <PackageReference Include="System.Net.WebSockets.Client" Version="4.3.2" />
+    <PackageReference Include="System.Reactive" Version="3.1.1" />
+    <PackageReference Include="System.Runtime" Version="4.3.0">
+    </PackageReference>
+    <PackageReference Include="websocketsharp.core" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="binance\" />
+    <Folder Include="binance\Account\" />
+    <Folder Include="binance\Enums\" />
+    <Folder Include="binance\General\" />
+    <Folder Include="binance\Market\" />
+    <Folder Include="binance\Properties\" />
+    <Folder Include="binance\UserStream\" />
+    <Folder Include="binance\WebSocket\" />
+    <Folder Include="binance\Abstract\" />
+    <Folder Include="binance\Interfaces\" />
+    <Folder Include="binance\Utils\" />
+    <Folder Include="poloniex\" />
+    <Folder Include="poloniex\TradingTools\" />
+    <Folder Include="poloniex\WalletTools\" />
+    <Folder Include="poloniex\General\" />
+    <Folder Include="poloniex\LiveTools\" />
+    <Folder Include="poloniex\MarketTools\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="poloniex\packages.config" />
+    <None Remove="poloniex\app.config" />
+  </ItemGroup>
+</Project>
